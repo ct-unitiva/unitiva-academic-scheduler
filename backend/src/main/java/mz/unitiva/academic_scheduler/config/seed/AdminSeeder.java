@@ -1,12 +1,12 @@
-package mz.unitiva.academic_scheduler.config;
+package mz.unitiva.academic_scheduler.config.seed;
 
 import lombok.RequiredArgsConstructor;
-import mz.unitiva.academic_scheduler.role.Role;
-import mz.unitiva.academic_scheduler.role.RoleName;
-import mz.unitiva.academic_scheduler.role.RoleRepository;
-import mz.unitiva.academic_scheduler.user.User;
-import mz.unitiva.academic_scheduler.user.UserRepository;
-import mz.unitiva.academic_scheduler.user.UserStatus;
+import mz.unitiva.academic_scheduler.role.entity.Role;
+import mz.unitiva.academic_scheduler.role.entity.RoleName;
+import mz.unitiva.academic_scheduler.role.repository.RoleRepository;
+import mz.unitiva.academic_scheduler.user.entity.User;
+import mz.unitiva.academic_scheduler.user.entity.UserStatus;
+import mz.unitiva.academic_scheduler.user.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;

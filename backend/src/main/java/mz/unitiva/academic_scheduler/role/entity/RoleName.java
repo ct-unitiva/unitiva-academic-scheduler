@@ -1,4 +1,4 @@
-package mz.unitiva.academic_scheduler.role;
+package mz.unitiva.academic_scheduler.role.entity;
 
 /**
  * System roles available in the platform.
