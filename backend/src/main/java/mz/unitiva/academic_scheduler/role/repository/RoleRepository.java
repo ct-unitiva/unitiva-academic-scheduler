@@ -1,7 +1,8 @@
-package mz.unitiva.academic_scheduler.role;
+package mz.unitiva.academic_scheduler.role.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
+import mz.unitiva.academic_scheduler.role.entity.Role;
+import mz.unitiva.academic_scheduler.role.entity.RoleName;
 import java.util.Optional;
 
 /**

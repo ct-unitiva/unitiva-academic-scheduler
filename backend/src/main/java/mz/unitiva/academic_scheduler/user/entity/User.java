@@ -1,10 +1,10 @@
-package mz.unitiva.academic_scheduler.user;
+package mz.unitiva.academic_scheduler.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import mz.unitiva.academic_scheduler.common.entity.AuditableEntity;
-import mz.unitiva.academic_scheduler.role.Role;
-import mz.unitiva.academic_scheduler.role.RoleName;
+import mz.unitiva.academic_scheduler.role.entity.Role;
+import mz.unitiva.academic_scheduler.role.entity.RoleName;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

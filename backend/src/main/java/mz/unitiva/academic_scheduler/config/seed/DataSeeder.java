@@ -1,9 +1,9 @@
-package mz.unitiva.academic_scheduler.config;
+package mz.unitiva.academic_scheduler.config.seed;
 
 import lombok.RequiredArgsConstructor;
-import mz.unitiva.academic_scheduler.role.Role;
-import mz.unitiva.academic_scheduler.role.RoleName;
-import mz.unitiva.academic_scheduler.role.RoleRepository;
+import mz.unitiva.academic_scheduler.role.entity.Role;
+import mz.unitiva.academic_scheduler.role.entity.RoleName;
+import mz.unitiva.academic_scheduler.role.repository.RoleRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

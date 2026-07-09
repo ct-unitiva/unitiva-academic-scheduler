@@ -1,8 +1,11 @@
-package mz.unitiva.academic_scheduler.auth;
+package mz.unitiva.academic_scheduler.auth.service;
 
 import lombok.RequiredArgsConstructor;
-import mz.unitiva.academic_scheduler.user.User;
-import mz.unitiva.academic_scheduler.user.UserRepository;
+import mz.unitiva.academic_scheduler.auth.dto.request.AuthenticationRequest;
+import mz.unitiva.academic_scheduler.auth.dto.response.AuthenticationResponse;
+import mz.unitiva.academic_scheduler.auth.jwt.JwtService;
+import mz.unitiva.academic_scheduler.user.entity.User;
+import mz.unitiva.academic_scheduler.user.repository.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
@@ -16,6 +19,7 @@ public class AuthenticationService {
 
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
+    private final JwtService jwtService;
 
     /**
      * Authenticates a user using email and password.
@@ -34,9 +38,12 @@ public class AuthenticationService {
         User user = userRepository.findByEmail(request.email())
                 .orElseThrow(() -> new IllegalArgumentException("Invalid user credentials."));
 
+        String accessToken = jwtService.generateToken(user);
+
         return new AuthenticationResponse(
                 "Authentication successful",
-                user.getEmail()
+                user.getEmail(),
+                accessToken
         );
     }
 }

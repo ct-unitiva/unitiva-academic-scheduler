@@ -1,7 +1,7 @@
-package mz.unitiva.academic_scheduler.user;
+package mz.unitiva.academic_scheduler.user.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
+import mz.unitiva.academic_scheduler.user.entity.User;
 import java.util.Optional;
 
 /**

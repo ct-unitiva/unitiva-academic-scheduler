@@ -1,7 +1,7 @@
-package mz.unitiva.academic_scheduler.config;
+package mz.unitiva.academic_scheduler.config.security;
 
 import lombok.RequiredArgsConstructor;
-import mz.unitiva.academic_scheduler.user.UserRepository;
+import mz.unitiva.academic_scheduler.user.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

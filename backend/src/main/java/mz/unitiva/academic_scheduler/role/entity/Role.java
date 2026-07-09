@@ -1,8 +1,10 @@
-package mz.unitiva.academic_scheduler.role;
+package mz.unitiva.academic_scheduler.role.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import mz.unitiva.academic_scheduler.common.entity.AuditableEntity;
+import mz.unitiva.academic_scheduler.role.entity.Role;
+import mz.unitiva.academic_scheduler.role.entity.RoleName;
 
 /**
  * Represents a security role used for authorization.
